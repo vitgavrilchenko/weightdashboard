@@ -17,6 +17,7 @@ public class MainController {
         Weight weight = new Weight();
         weight.setWeight(81.90);
         weight.setDateTime(LocalDateTime.now());
+
         weightRepository.save(weight);
         return "weigth";
     }
